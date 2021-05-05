@@ -14,14 +14,37 @@ int main()
     srand(time(NULL)); 
     setlocale(LC_ALL, "Russian");
     //Слово для поиска
+
+    std::cout << "Использовать стандартные значения генетического алгоритма? [Y/N]\n";
+    char choose;
+    //choose = new char[1];
+    std::cin >> choose;
+
+    //Заданные параметры
+    int PopMaxAmount = 100;
+    int Generation = 1, GenLimit = 500;
+    float PC = 0.6, PM = 0.02;
+    float Linage = 0.7;
+
+    if (choose == 'N')
+    {
+        std::cout << "Введите размер популяции:\n";
+        std::cin >> PopMaxAmount;
+        std::cout << "Введите максимальное количество генераций:\n";
+        std::cin >> GenLimit;
+        std::cout << "Введите шанс скрещивания [0..1]:\n";
+        std::cin >> PC;
+        std::cout << "Введите шанс мутации [0..1]:\n";
+        std::cin >> PM;
+        std::cout << "Введите процент особей, усекаемых в селекции [0..1]:\n";
+        std::cin >> Linage;
+    }
+
+
     std::string FinalWord = "МИР";
     
     GenNumber = FinalWord.size();
-    //Заданные параметры
-    int PopMaxAmount = 100;
-    int Generation = 1, GenLimit = 500; 
-    float PC = 0.5, PM = 0.01;
-    float Linage = 0.4;
+   
     //Начальная популяция
     Population ok(PopMaxAmount, FinalWord);
     ok.Aptitude(FinalWord);
