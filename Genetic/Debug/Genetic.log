@@ -1,0 +1,7 @@
+﻿  Genetic.cpp
+C:\Users\Nix\source\repos\Genetic\Genetic\Genetic.cpp(14,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Nix\source\repos\Genetic\Genetic\Genetic.cpp(23,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Nix\source\repos\Genetic\Genetic\Genetic.cpp(24,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Nix\source\repos\Genetic\Genetic\Genetic.cpp(35,68): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Nix\source\repos\Genetic\Genetic\Genetic.cpp(39,29): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Genetic.vcxproj -> C:\Users\Nix\source\repos\Genetic\Debug\Genetic.exe
